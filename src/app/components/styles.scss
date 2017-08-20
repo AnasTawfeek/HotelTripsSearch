@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+html{
+    height: 100%;
+    body{
+        font-family: "Open Sans";
+        background: url('https://tjwlcdn.com/cms/cms-headers/main/tajawal-flights.jpg?v2.4') fixed;
+        background-size: cover;
+        height: 100%;
+        #tajawalApp{
+            height: 100%;
+        }
+        .App{
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.HotelsListing {
+    width: 75%;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    .clearfix{
+        clear: both;
+    }
+    &__SideBar {
+        flex: 1;
+        padding: 15px;
+        font-size: 18px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 3px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.28);
+        &__NameFilter {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.6);
+            margin-bottom: 25px;
+            outline: none;
+            padding: 0 10px;
+            box-sizing: border-box;
+            color: #666;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        &__PriceFilter {
+            margin: 15px 0;
+        }
+    }
+
+    &__Body {
+        flex: 3;
+        padding: 15px;
+        &__BookingDuration {
+            float: left;
+            line-height: 30px;
+            color: #fff;
+            font-size: 14px;
+        }
+        &__Sorting {
+            float: right;
+            &__SortBtn {
+                height: 30px;
+                background: #3498db;
+                border: none;
+                border-radius: 3px;
+                margin-left: 10px;
+                padding: 0 10px;
+                color: #fff;
+                line-height: 30px;
+                transition: background 300ms, box-shadow 300ms;
+                cursor: pointer;
+                box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.28);
+                outline: none;
+                position: relative;
+                span{
+                    text-transform: capitalize;
+                }
+                &:hover {
+                    background: lighten(#3498db, 10%);
+                    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.28);
+                    line-height: 30px;
+                }
+                &.selected:before {
+                    content: '\f058';
+                    position: absolute;
+                    font-family: 'FontAwesome';
+                    left: -5px;
+                    top: -15px;
+                }
+            }
+        }
+
+        &__Result{
+            padding: 15px 0;
+            clear: both;
+            &:before{
+                content: ' ';
+                display: block;
+                clear: both;
+            }
+        }
+    }
+}

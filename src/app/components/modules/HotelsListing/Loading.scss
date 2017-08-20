@@ -1,0 +1,12 @@
+.HotelsListing__LoadingState {
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-around;
+    color: #fff;
+    .ant-spin-dot i{
+        background: #fff;
+    }
+}

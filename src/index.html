@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>...</title>
+</head>
+
+<body>
+    <div id="tajawalApp"></div>
+
+    <!-- Fix IE String.startsWith unsupported method issue -->
+    <script type="text/javascript">
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(searchString, position) {
+                position = position || 0;
+                return this.indexOf(searchString, position) === position;
+            };
+        }
+    </script>
+    <script type="text/javascript" src="/assets/js/App.min.js"></script>
+</body>
+
+</html>

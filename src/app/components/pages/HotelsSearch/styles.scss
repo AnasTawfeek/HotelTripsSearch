@@ -1,0 +1,34 @@
+.HotelsSearch{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__RangePicker{
+        background: rgba(255, 255, 255, 0.9);
+        color: #fff !important;
+        padding: 15px;
+        border-radius: 3px;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.28);
+    }
+    &__SubmitSearch{
+        background: #48BAE3;
+        border: none;
+        padding: 15px;
+        margin: 0 0 0 15px;
+        border-radius: 3px;
+        color: #fff;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.28);
+        cursor: pointer;
+        transition: background 300ms, box-shadow 300ms;
+        outline: none;
+        &:hover{
+            background: lighten(#48BAE3, 10%);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.28);
+        }
+        &:disabled{
+            background: #ccc;
+            box-shadow: none;
+            cursor: default;
+        }
+    }
+}
